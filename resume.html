@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thodupunuri Sanath | Resume</title>
+    <!-- Modern Typography: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* A4 Print friendly styles */
+        :root {
+            --cv-bg: #ffffff;
+            --cv-text: #333333;
+            --cv-heading: #1e3a8a;
+            /* Dark Blue */
+            --cv-divider: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            /* light gray outer bg */
+            color: var(--cv-text);
+            line-height: 1.5;
+            padding: 2rem;
+        }
+
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--cv-bg);
+            padding: 3rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+
+        header {
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--cv-heading);
+            padding-bottom: 1rem;
+        }
+
+        h1 {
+            color: var(--cv-heading);
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.9rem;
+            justify-content: space-between;
+        }
+
+        .contact-info a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .section-title {
+            color: var(--cv-heading);
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.8rem;
+            margin-top: 1.5rem;
+            border-bottom: 1px solid var(--cv-divider);
+            padding-bottom: 0.3rem;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .skill-label {
+            font-weight: 600;
+            color: #4b5563;
+        }
+
+        /* Experience & Projects */
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.3rem;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .item-date {
+            font-size: 0.9rem;
+            color: #6b7280;
+            font-weight: 500;
+        }
+
+        .item-subtitle {
+            color: #4b5563;
+            font-style: italic;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .bullets {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            font-size: 0.95rem;
+            color: #4b5563;
+        }
+
+        .bullets li {
+            margin-bottom: 0.3rem;
+        }
+
+        .mb-4 {
+            margin-bottom: 1.5rem;
+        }
+
+        /* Action Buttons for web view */
+        .page-actions {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--cv-heading);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            margin: 0 0.5rem;
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
+        }
+
+        .btn:hover {
+            background: #152c6b;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--cv-heading);
+            border: 1px solid var(--cv-heading);
+        }
+
+        .btn-outline:hover {
+            background: #f3f4f6;
+        }
+
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+
+            .cv-container {
+                box-shadow: none;
+                padding: 0;
+                max-width: 100%;
+                border-radius: 0;
+            }
+
+            .page-actions {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-actions">
+        <a href="index.html" class="btn btn-outline">Back to Portfolio</a>
+        <button onclick="window.print()" class="btn">Print / Save as PDF</button>
+    </div>
+
+    <div class="cv-container">
+        <header>
+            <h1>Thodupunuri Sanath</h1>
+            <div class="contact-info">
+                <div>
+                    <span>LinkedIn: </span><a
+                        href="https://www.linkedin.com/in/thodupunuri-sanath/">linkedin.com/in/thodupunuri-sanath</a><br>
+                    <span>GitHub: </span><a href="https://github.com/t-sanath">github.com/t-sanath</a>
+                </div>
+                <div style="text-align: right;">
+                    <span>Email: </span><a
+                        href="mailto:thodupunurisanath01@gmail.com">thodupunurisanath01@gmail.com</a><br>
+                    <span>Mobile: </span>8143516872
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-label">Languages:</div>
+                <div>C++, Python, C, Java</div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-label">Frameworks:</div>
+                <div>HTML, CSS</div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-label">Tools/Platforms:</div>
+                <div>MySQL, MongoDB</div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-label">Soft Skills:</div>
+                <div>Problem-Solving, Team Player, Time Management, Adaptability</div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Projects</h2>
+
+            <div class="mb-4">
+                <div class="item-header">
+                    <div class="item-title">Excel Dashboard - Data Analysis and Visualization Platform</div>
+                    <div class="item-date">May '25</div>
+                </div>
+                <ul class="bullets">
+                    <li>Built an interactive Excel dashboard to analyze commodity stock distribution across states,
+                        districts, and commodity categories.</li>
+                    <li>Visualized stock distribution across states, districts, and commodities with dynamic slicers and
+                        clean design.</li>
+                    <li>Utilized Pivot Tables, Pivot Charts, Slicers, and Custom Visualizations to enhance data-driven
+                        decision-making.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <div class="item-header">
+                    <div class="item-title">Motorcycle Theft Data Analysis Project</div>
+                    <div class="item-date">Apr '25</div>
+                </div>
+                <ul class="bullets">
+                    <li>Conducted a detailed analysis of motorcycle theft data to clean datasets, identify trends, and
+                        extract meaningful insights.</li>
+                    <li>Utilized Python, Pandas, NumPy, Matplotlib, and Seaborn to process data, explore patterns, and
+                        create clear visualizations.</li>
+                    <li>Revealed key patterns such as peak theft hours, high-risk locations, and anomaly
+                        spikes—improving theft trend understanding by providing data-driven evidence for targeted
+                        actions.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Training</h2>
+            <div class="mb-4">
+                <div class="item-header">
+                    <div class="item-title">C++ Programming: OOPS & Data Structure and Algorithm | CSE PATHASHALA</div>
+                    <div class="item-date">Jun '25</div>
+                </div>
+                <ul class="bullets">
+                    <li>Developed optimized solutions for practical computational challenges in C++ using advanced data
+                        structures and algorithms.</li>
+                    <li>Implemented efficient programs involving linked lists, trees, graphs, and dynamic programming to
+                        enhance execution speed and overall system performance.</li>
+                    <li style="list-style: none; margin-top: 5px;"><strong>Tech stacks used:</strong> C++, Standard
+                        Template Library, Object Oriented Programming, Algorithm Design.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Certificates</h2>
+            <ul class="bullets">
+                <li style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                    <span><strong>Mastering in C Language</strong> | CSE PATHASHALA</span>
+                    <span class="item-date">Mar '24</span>
+                </li>
+                <li style="display: flex; justify-content: space-between;">
+                    <span><strong>Digital Systems: From Logic Gates to Processors</strong> | COURSERA</span>
+                    <span class="item-date">Sep '24</span>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">Achievements</h2>
+            <ul class="bullets">
+                <li style="margin-bottom: 8px;">
+                    <strong>Solved 250+ Problems on LeetCode</strong><br>
+                    Solved 250+ problems and among the top 25% of global coders
+                </li>
+                <li>
+                    <strong>Secured 10th rank in the Hackathon: HACKOVERFLOW 5.0</strong><br>
+                    Participated and ranked 10th in the Hackathon organized by LPU
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">Education</h2>
+            <div class="mb-4">
+                <div class="item-header">
+                    <div class="item-title">Lovely Professional University</div>
+                    <div class="item-date">Phagwara, Punjab</div>
+                </div>
+                <div class="item-subtitle" style="display: flex; justify-content: space-between;">
+                    <span>Bachelor of Technology - Computer Science and Engineering; <strong>CGPA: 6.6</strong></span>
+                    <span>Since Aug '23</span>
+                </div>
+            </div>
+
+            <div class="mb-4" style="margin-bottom: 1rem;">
+                <div class="item-header">
+                    <div class="item-title">Sri Chaitanya College</div>
+                    <div class="item-date">Miyapur Hyderabad</div>
+                </div>
+                <div class="item-subtitle" style="display: flex; justify-content: space-between;">
+                    <span>Intermediate; <strong>Percentage: 89%</strong></span>
+                    <span>Jun '21 - Jun '23</span>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <div class="item-header">
+                    <div class="item-title">Sri Sai Public School</div>
+                    <div class="item-date">Patancheru, Hyderabad</div>
+                </div>
+                <div class="item-subtitle" style="display: flex; justify-content: space-between;">
+                    <span>Matriculation; <strong>Percentage: 70%</strong></span>
+                    <span>Apr '21</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
